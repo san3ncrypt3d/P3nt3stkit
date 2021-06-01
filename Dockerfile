@@ -61,6 +61,7 @@ RUN apt-get install -y \
     python-dnspython \
     libldns-dev \
     ruby-dev \
+    apache2 \
     libgmp-dev \
     zlib1g-dev \
     libpcap-dev \
