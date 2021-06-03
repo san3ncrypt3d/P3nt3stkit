@@ -73,7 +73,9 @@ RUN apt-get install -y \
     zsh \
     hydra \
     dnsrecon \
-    powerline\
+    nano \
+    curl \
+    powerline \
     fonts-powerline
 
 RUN apt-get -y autoremove
