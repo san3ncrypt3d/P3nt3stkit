@@ -76,12 +76,14 @@ RUN apt-get install -y \
     nano \
     curl \
     powerline \
-    fonts-powerline
+    fonts-powerline \
+    libcurl4-openssl-dev
 
 RUN apt-get -y autoremove
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-RUN pip install wfuzz
+RUN  pip3 install --upgrade pycurl 
+RUN pip3 install wfuzz
 
 RUN mkdir ${HOME}/arsenal && \
     mkdir wordlists
